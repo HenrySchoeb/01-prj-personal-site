@@ -71,7 +71,7 @@ h3 {
 /* Bio line in a centered block paragraph style */
 .bio {
   display: inline-block;
-  background: #fff;
+  background: #f6c0fd;
   padding: 22px 38px;
   border-radius: 14px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.10);
