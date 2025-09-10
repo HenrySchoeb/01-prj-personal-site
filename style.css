@@ -1,6 +1,6 @@
 /* Set the background color for the whole page */
 body {
-  background: #b3c6f7; /* powdered blue */
+  background: #aee6fd; /* lighter, more sky blue pastel */
   margin: 0;
   font-family: Arial, sans-serif;
   text-align: center; /* Center all text */
@@ -13,10 +13,10 @@ body {
   padding: 20px;
 }
 
-/* Hero section with a moving gradient background */
+/* Hero section with a sky blue to pink gradient background */
 .hero {
   /* Use a linear gradient for the background */
-  background: linear-gradient(120deg, #a1c4fd, #fbc2eb);
+  background: linear-gradient(120deg, #aee6fd, #fbc2eb); /* sky blue to pink */
   /* Animate the background position to make it move */
   background-size: 200% 200%;
   animation: gradientMove 6s ease-in-out infinite;
@@ -42,9 +42,16 @@ body {
   margin: 0 auto 20px auto; /* Center image */
 }
 
-/* Bio */
+/* Bio - centered block paragraph style */
 .bio {
+  display: inline-block; /* Makes the bio a block but only as wide as its content */
+  background: #fff;
+  padding: 18px 32px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin: 0 auto 20px auto;
   text-align: center;
+  font-size: 1.1em;
 }
 
 /* Skills */
