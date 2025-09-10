@@ -1,106 +1,130 @@
+/* Set the background color for the whole page */
+body {
+  background: #b3c6f7; /* powdered blue */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center; /* Center all text */
+}
+
+/* Make sure content doesn't stretch too wide on desktop */
+.main-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Hero section with a moving gradient background */
+.hero {
+  /* Use a linear gradient for the background */
+  background: linear-gradient(120deg, #a1c4fd, #fbc2eb);
+  /* Animate the background position to make it move */
+  background-size: 200% 200%;
+  animation: gradientMove 6s ease-in-out infinite;
+  padding: 60px 20px 40px 20px;
+  border-radius: 0 0 30px 30px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+}
+
+/* Keyframes for moving gradient */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 /* Profile image styling */
 .profile-img {
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid #66a3ff;
+  display: block;
+  margin: 0 auto 20px auto; /* Center image */
 }
-
-
 
 /* Bio */
 .bio {
-text-align: center;
+  text-align: center;
 }
-
 
 /* Skills */
 .skills ul {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-list-style: none;
-padding: 0; /* Added for better spacing */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
 }
-
 
 .skills li {
-background: #ffd6e8;
-margin: 10px;
-padding: 15px 25px;
-border-radius: 12px;
-box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-transition: transform 0.2s ease;
+  background: #ffd6e8;
+  margin: 10px;
+  padding: 15px 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
 }
-
 
 .skills li:hover {
-transform: scale(1.05);
+  transform: scale(1.05);
 }
-
 
 /* About Me */
 .about-me {
-background: #ffd6e8;
-padding: 40px;
-border-radius: 10px;
-box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-transition: transform 0.2s ease;
+  background: #ffd6e8;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+  margin: 30px auto;
+  max-width: 700px;
 }
-
 
 .about-me:hover {
-transform: scale(1.02);
+  transform: scale(1.02);
 }
-
 
 /* Projects */
-/* Use flexbox instead of grid for beginner-friendly layout */
 .projects {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
-
 
 .project {
-background: #ffd6e8;
-padding: 20px;
-border-radius: 10px;
-box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-transition: transform 0.2s ease;
-text-align: center;
-width: 250px; /* Fixed width for each project card */
-margin: 10px; /* Space between cards */
+  background: #ffd6e8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+  text-align: center;
+  width: 250px;
+  margin: 10px;
 }
-
 
 .project:hover {
-transform: scale(1.03);
+  transform: scale(1.03);
 }
-
 
 .project h3 {
-margin-bottom: 10px;
+  margin-bottom: 10px;
 }
-
 
 .project img {
-width: 120px;
-height: 120px;
-border-radius: 50%;
-object-fit: cover;
-margin-bottom: 15px;
-border: 3px solid #66a3ff;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #66a3ff;
 }
-
 
 /* Footer */
 footer {
-text-align: center;
-padding: 20px;
-background: #333;
-color: white;
-margin-top: 40px;
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: white;
+  margin-top: 40px;
 }
